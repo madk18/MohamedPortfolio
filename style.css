@@ -110,3 +110,25 @@ a:focus-visible { outline: 3px solid #91aaff; outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+.project-open {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 18px;
+  color: var(--accent);
+  font-weight: 700;
+}
+.project-open:hover { text-decoration: underline; text-underline-offset: 4px; }
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(255,255,255,.8);
+}
+.about-links a { color: var(--accent); font-weight: 700; text-decoration: none; }
+.about-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
