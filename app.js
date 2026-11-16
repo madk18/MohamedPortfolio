@@ -12,17 +12,32 @@ if (copyButton && copyFeedback) {
   });
 }
 
-
 const themeButton = document.querySelector("#theme-toggle");
-const savedTheme = localStorage.getItem("portfolio-theme");
+const THEME_KEY = "portfolio-theme";
 
-if (savedTheme === "dark") {
+function readSavedTheme() {
+  try {
+    return localStorage.getItem(THEME_KEY);
+  } catch {
+    return null;
+  }
+}
+
+function saveTheme(theme) {
+  try {
+    localStorage.setItem(THEME_KEY, theme);
+  } catch {
+    // Dark mode still works for this visit if browser storage is blocked.
+  }
+}
+
+if (readSavedTheme() === "dark") {
   document.body.classList.add("dark-mode");
 }
 
 function updateThemeButton() {
-  const isDark = document.body.classList.contains("dark-mode");
   if (!themeButton) return;
+  const isDark = document.body.classList.contains("dark-mode");
   themeButton.textContent = isDark ? "☀️ Habka iftiinka" : "🌙 Habka mugdiga";
   themeButton.setAttribute("aria-pressed", String(isDark));
 }
@@ -31,9 +46,8 @@ updateThemeButton();
 
 if (themeButton) {
   themeButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    const theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
-    localStorage.setItem("portfolio-theme", theme);
+    const isDark = document.body.classList.toggle("dark-mode");
+    saveTheme(isDark ? "dark" : "light");
     updateThemeButton();
   });
 }
