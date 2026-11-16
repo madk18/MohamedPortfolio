@@ -1,11 +1,33 @@
 <!doctype html>
-<html lang="so"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Casuumadda Dhalashada</title><link rel="stylesheet" href="./style.css" /><style>
-.page { width:min(100%,820px); margin:0 auto; }
-.back { display:inline-block; margin-bottom:20px; color:var(--accent); font-weight:700; text-decoration:none; }
-.panel { padding:clamp(24px,5vw,48px); border:1px solid var(--border); border-radius:24px; background:var(--surface); box-shadow:var(--shadow); }
-.panel h1 { font-size:clamp(2rem,6vw,3.2rem); margin:0 0 18px; }
-.panel h2 { margin:28px 0 10px; font-size:1.3rem; }
-.panel p,.panel li { color:var(--muted); }
-.panel li { margin:8px 0; }
+<html lang="so">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f4f7fc" />
+<link rel="stylesheet" href="./style.css" />
+<title>Casuumadda Dhalashada</title><style>
+.page-shell{width:min(100%,900px);margin:0 auto}
+.back-link{display:inline-flex;margin:0 0 22px;color:var(--accent);font-weight:700;text-decoration:none}
+.detail-card{overflow:hidden;border:1px solid var(--border);border-radius:26px;background:var(--surface);box-shadow:var(--shadow)}
+.detail-image{display:block;width:100%;height:clamp(210px,36vw,360px);object-fit:cover}
+.detail-content{padding:clamp(24px,5vw,48px)}
+.detail-content h1{font-size:clamp(2rem,6vw,3.4rem);margin:0 0 16px}
+.detail-content h2{font-size:1.25rem;margin:28px 0 10px}
+.detail-content p,.detail-content li{color:var(--muted)}
+.detail-content li{margin:8px 0}
+.detail-content .eyebrow{color:var(--accent)}
+.detail-content .button{margin-top:12px}
 </style></head>
-<body><main class="page"><a class="back" href="./index.html">← Ku noqo bogga hore</a><article class="panel"><p class="eyebrow">Mashruuc HTML</p><h1>Casuumadda Dhalashada</h1><p>Bog tusaale ah oo lagu tababarto samaynta casuumaad online ah.</p><h2>Waxyaabaha boggu ka koobnaan karo</h2><ul><li>Cinwaanka iyo taariikhda xafladda</li><li>Sawir muujinaya munaasabadda</li><li>Liiska waxyaabaha martidu keeni karto</li><li>Goobta xafladda iyo tilmaamaha imaatinka</li></ul><p>Taariikh iyo goob dhab ah laguma darin, maadaama xogtaas aan la xaqiijin.</p></article></main></body></html>
+<body><main class="page-shell">
+<a class="back-link" href="./index.html">← Ku noqo portfolio-ga</a>
+<article class="detail-card">
+<img class="detail-image" src="https://images.unsplash.com/photo-1530103862676-de8c9deBAD1?auto=format&fit=crop&w=1400&q=90" alt="Qurxin xaflad dhalasho oo midabbo leh" />
+<div class="detail-content">
+<p class="eyebrow">Mashruuc tababar · HTML</p>
+<h1>Casuumadda Dhalashada</h1>
+<p>Bog tusaale ah oo muujinaya sida loo dhiso casuumaad online ah oo sahlan in la akhriyo.</p>
+<h2>Waxyaabaha casuumaaddu ka koobnaan karto</h2>
+<ul><li>Cinwaanka iyo taariikhda xafladda</li><li>Sawir muujinaya munaasabadda</li><li>Liiska waxyaabaha martidu keeni karto</li><li>Goobta xafladda iyo tilmaamaha imaatinka</li></ul>
+<p><strong>Fiiro gaar ah:</strong> Taariikh iyo goob dhab ah laguma darin; boggani waa tusaale tababar.</p>
+<a class="button" href="./index.html#projects">Ku noqo mashaariicda</a>
+</div></article></main></body></html>
