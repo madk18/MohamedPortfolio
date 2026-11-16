@@ -177,3 +177,19 @@ a:focus-visible { outline: 3px solid #91aaff; outline-offset: 3px; }
 .contact-cta .actions{margin-top:18px}
 button.button{font:inherit;cursor:pointer}
 .copy-feedback{min-height:1.5em;font-size:.9rem;font-weight:700;color:var(--accent)}
+
+
+/* Dark mode theme */
+.theme-control{display:flex;justify-content:flex-end;margin-bottom:14px}
+.theme-toggle{cursor:pointer}
+body.dark-mode{
+  --bg:#101827;--surface:#182438;--ink:#edf2ff;--muted:#b5c1d4;
+  --accent:#8ba7ff;--border:#30415a;
+  --shadow:0 16px 40px rgba(0,0,0,.22);
+  background:radial-gradient(circle at 12% 0%,#1c2b49 0,transparent 32rem),var(--bg);
+}
+body.dark-mode .about,body.dark-mode .about-links{background:#182438}
+body.dark-mode .button.secondary{background:#182438;color:#a9bdff}
+body.dark-mode .tag{background:#26364d;color:#d5deed}
+body.dark-mode .skill{background:#26375b;border-color:#405889;color:#dce5ff}
+body.dark-mode .project-icon{background:#26375b}
