@@ -158,3 +158,22 @@ a:focus-visible { outline: 3px solid #91aaff; outline-offset: 3px; }
 .birthday-card-art strong{font-size:1.2rem}
 .birthday-hero-art{height:clamp(210px,36vw,360px);font-size:clamp(1.5rem,4vw,2.5rem)}
 .birthday-hero-art strong{font-size:clamp(2.2rem,7vw,4.6rem)}
+
+
+/* Skills and contact sections */
+.skills,.contact-cta{
+  margin-top:22px;padding:26px;border:1px solid var(--border);
+  border-radius:22px;background:var(--surface);box-shadow:var(--shadow)
+}
+.skills .section-title{margin:0 0 18px}
+.skill-list{display:flex;flex-wrap:wrap;gap:10px}
+.skill{padding:8px 14px;border:1px solid #dbe4ff;border-radius:999px;
+  background:#eef2ff;color:#2948ad;font-size:.9rem;font-weight:700}
+.skills-note,.contact-cta p{color:var(--muted)}
+.skills-note{margin:16px 0 0}
+.contact-cta{text-align:center}
+.contact-cta h2{margin:0 0 8px;font-family:"Manrope",sans-serif}
+.contact-cta p{margin:8px 0}
+.contact-cta .actions{margin-top:18px}
+button.button{font:inherit;cursor:pointer}
+.copy-feedback{min-height:1.5em;font-size:.9rem;font-weight:700;color:var(--accent)}
