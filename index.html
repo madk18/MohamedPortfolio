@@ -2,42 +2,50 @@
 <html lang="so">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio-ga Mohamed iyo mashaariicda uu ku tababarto HTML iyo CSS." />
+    <meta name="theme-color" content="#f4f7fc" />
     <title>Portfolio-ga Mohamed</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
-    <h1>Portfolio-ga Mohamed</h1>
+    <main>
+      <header class="hero">
+        <p class="eyebrow">Portfolio • Web Development</p>
+        <h1>Mohamed</h1>
+        <p class="intro">Waxaan ahay Web Developer bilow ah oo xiiseeya dhisidda website-yo nadiif ah, fudud, isla markaana si fiican uga shaqeeya qalab kala duwan.</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/madk18" target="_blank" rel="noopener noreferrer">GitHub-kayga ↗</a>
+          <a class="button secondary" href="#projects">Eeg mashaariicda</a>
+        </div>
+      </header>
 
-    <h2>Waxaan ahay Web Developer</h2>
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 class="section-title" id="projects-title">Mashaariicda tababarka</h2>
+        <div class="projects">
+          <article class="project">
+            <div class="project-icon" aria-hidden="true">🎬</div>
+            <h3>Kala Sarreynta Filimada</h3>
+            <p>Mashruuc HTML ah oo lagu tababarto cinwaannada, qoraallada, kala-habaynta iyo links-ka bogga.</p>
+            <span class="tag">HTML • Practice</span>
+          </article>
+          <article class="project">
+            <div class="project-icon" aria-hidden="true">🎂</div>
+            <h3>Casuumadda Dhalashada</h3>
+            <p>Mashruuc lagu tababarto sawirrada, liisaska iyo samaynta bog casuumaad fudud.</p>
+            <span class="tag">HTML • Practice</span>
+          </article>
+        </div>
+      </section>
 
-    <hr />
+      <section class="about" aria-labelledby="about-title">
+        <h2 id="about-title">Waxaan hadda baranayaa</h2>
+        <p>HTML iyo CSS ayaan ku dhisayaa aasaaska frontend-ka. Waxaan sii horumarinayaa xirfadahayga anigoo ku shaqaynaya mashaariic yaryar oo aan si tartiib ah u hagaajinayo.</p>
+      </section>
 
-    <h3>
-      <a href="./public/movie-ranking.html">
-        Mashruuca Kala Sarreynta Filimada
-      </a>
-    </h3>
-
-    <img
-      src="./assets/images/movie-ranking.png"
-      height="200"
-      alt="Muuqaalka Mashruuca Kala Sarreynta Filimada" />
-
-    <h3>
-      <a href="./public/birthday-invite.html">
-        Mashruuca Casuumadda Dhalashada
-      </a>
-    </h3>
-
-    <img
-      src="./assets/images/birthday-invite.png"
-      height="200"
-      alt="Muuqaalka Mashruuca Casuumadda Dhalashada" />
-
-    <hr />
-
-    <a href="./public/about.html">Ku Saabsan Aniga</a>
-
-    <a href="./public/contact.html">Nala Soo Xiriir</a>
+      <footer>
+        <p>© 2026 Mohamed · Waxaa lagu dhisay HTML iyo CSS.</p>
+      </footer>
+    </main>
   </body>
 </html>
