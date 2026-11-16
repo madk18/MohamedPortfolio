@@ -193,3 +193,11 @@ body.dark-mode .button.secondary{background:#182438;color:#a9bdff}
 body.dark-mode .tag{background:#26364d;color:#d5deed}
 body.dark-mode .skill{background:#26375b;border-color:#405889;color:#dce5ff}
 body.dark-mode .project-icon{background:#26375b}
+
+
+/* Project demo and source links */
+.project-actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 14px}
+.project-actions .button{display:inline-flex;align-items:center;justify-content:center;
+  padding:10px 14px;font-size:.9rem;text-decoration:none}
+.project-actions .project-source{font-size:.86rem}
+@media(max-width:420px){.project-actions{flex-direction:column}.project-actions .button{width:100%}}
