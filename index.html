@@ -3,23 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio-ga Mohamed iyo mashaariicda uu ku tababarto HTML iyo CSS." />
+    <meta name="description" content="Mahamed waa Frontend Developer dhisa websites casri ah isagoo adeegsanaya HTML, CSS iyo JavaScript." />
     <meta name="theme-color" content="#f4f7fc" />
-    <title>Portfolio-ga Mohamed</title>
+    <title>Mahamed | Frontend Developer</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
-      <div class="theme-control">
-        <button class="button secondary theme-toggle" id="theme-toggle" type="button" aria-pressed="false">🌙 Habka mugdiga</button>
-      </div>
-      <header class="hero">
-        <p class="eyebrow">Portfolio • Web Development</p>
-        <h1>Mohamed</h1>
-        <p class="intro">Waxaan ahay Web Developer bilow ah oo xiiseeya dhisidda website-yo nadiif ah, fudud, isla markaana si fiican uga shaqeeya qalab kala duwan.</p>
-        <div class="actions">
-          <a class="button" href="https://github.com/madk18" target="_blank" rel="noopener noreferrer">GitHub-kayga ↗</a>
-          <a class="button secondary" href="#projects">Eeg mashaariicda</a>
+      <nav class="portfolio-nav" aria-label="Main navigation">
+        <a class="nav-brand" href="#" aria-label="Mahamed home">M<span>.</span></a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="button secondary theme-toggle" id="theme-toggle" type="button" aria-pressed="false">🌙 Dark mode</button>
+      </nav>
+      <header class="hero hero-v2">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> FRONTEND DEVELOPER</p>
+          <h1>Hi, I'm <span>Mahamed.</span><br> I build for the web.</h1>
+          <p class="intro">Waxaan dhisaa websites casri ah, nadiif ah oo si fiican uga shaqeeya telefoonka iyo kombiyuutarka. Waxaan ku shaqeeyaa HTML, CSS iyo JavaScript.</p>
+          <div class="actions">
+            <a class="button" href="#projects">View my work <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="#contact">Contact me</a>
+          </div>
+          <p class="hero-location">Based in Sweden · Open to opportunities</p>
+        </div>
+        <div class="hero-visual" aria-label="Frontend development illustration" role="img">
+          <div class="visual-window"><div class="window-dots"><i></i><i></i><i></i></div><div class="visual-code"><span>&lt;html&gt;</span><b>Building digital</b><b>experiences<span>.</span></b><small>HTML&nbsp; / &nbsp;CSS&nbsp; / &nbsp;JS</small></div></div>
+          <div class="visual-chip chip-one">HTML5</div><div class="visual-chip chip-two">CSS3</div><div class="visual-chip chip-three">JavaScript</div>
         </div>
       </header>
 
@@ -89,7 +103,7 @@
         </div>
       </section>
 
-      <section class="skills" aria-labelledby="skills-title">
+      <section class="skills" id="skills" aria-labelledby="skills-title">
         <h2 class="section-title" id="skills-title">Xirfadaha aan ku shaqeeyo</h2>
         <div class="skill-list">
           <span class="skill">HTML5</span>
@@ -102,12 +116,12 @@
         <p class="skills-note">Waxaan xirfadahan ku xoojinayaa tababar iyo mashaariic aan si joogto ah u dhisayo.</p>
       </section>
 
-      <section class="about" aria-labelledby="about-title">
+      <section class="about" id="about" aria-labelledby="about-title">
         <h2 id="about-title">Waxaan hadda baranayaa</h2>
         <p>HTML iyo CSS ayaan ku dhisayaa aasaaska frontend-ka. Waxaan sii horumarinayaa xirfadahayga anigoo ku shaqaynaya mashaariic yaryar oo aan si tartiib ah u hagaajinayo.</p>
       </section>
 
-      <section class="contact-cta" aria-labelledby="contact-title">
+      <section class="contact-cta" id="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Aan wada shaqayno</h2>
         <p>Ma doonaysaa inaad aragto mashaariicdayda ama aad ila soo xiriirto?</p>
         <div class="actions">
@@ -123,7 +137,7 @@
       </nav>
 
       <footer>
-        <p>© 2026 Mohamed · Waxaa lagu dhisay HTML iyo CSS.</p>
+        <p>© 2026 Mahamed · Built with HTML, CSS & JavaScript.</p>
       </footer>
     </main>
     <script src="./app.js" defer></script>
